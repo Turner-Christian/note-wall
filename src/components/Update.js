@@ -42,7 +42,9 @@ const Update = (props) => {
             <header className='d-flex justify-content-center p-3 border-bottom'>
                 <h1 className='m-5'>Note</h1>
                 <div className='m-5 d-flex justify-content-center'>
-                    <Link to={'/'}>go back home</Link>
+                    <div>
+                        <Link className='btn bg-black text-center text-white' to={'/'}>Home</Link>
+                    </div>
                 </div>
             </header>
             <div className='d-flex justify-content-center mt-5'>
@@ -65,10 +67,10 @@ const Update = (props) => {
                     </div>
                     <div>
                         <div>
-                            <input className='btn bg-success mb-3 mt-3' type="submit" />
+                            <input className='btn bg-success mb-3 mt-3 text-white' type="submit" />
                         </div>
                         <div>
-                            <button className='btn bg-danger' onClick={(e) => { deleteNote(id) }}>Delete Note</button>
+                            <button className='btn bg-danger text-white' onClick={(e) => { deleteNote(id) }}>Delete Note</button>
                         </div>
                     </div>
                 </form>

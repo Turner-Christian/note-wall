@@ -29,7 +29,9 @@ const NoteForm = (props) => {
             <header className='d-flex justify-content-center p-3 border-bottom'>
                 <h1 className='m-5'>Write Notes</h1>
                 <div className='m-5 d-flex justify-content-center'>
-                    <Link to={'/'}>go back home</Link>
+                    <div>
+                        <Link className='btn bg-black text-white text-center' to={'/'}>Home</Link>
+                    </div>
                 </div>
             </header>
             <div className='d-flex justify-content-center mt-5'>
@@ -51,7 +53,7 @@ const NoteForm = (props) => {
                             onChange={(e) => { setBody(e.target.value) }} />
                     </div>
                     <div>
-                        <input className='btn bg-success mt-3' type="submit" value={'Write this note!'} />
+                        <input className='btn bg-success mt-3 text-white' type="submit" value={'Write this note!'} />
                     </div>
                 </form>
             </div>
