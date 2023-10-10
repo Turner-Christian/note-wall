@@ -20,7 +20,7 @@ const NoteList = (props) => {
     return (
         <div className='container-md bg-secondary-subtle border border-top-1 border-bottom-1 border-dark p-3'>
             <header className='d-flex justify-content-center flex-column p-3'>
-                <h1 className='m-5'>NOTE WALL</h1>
+                <h1 className='m-5'>POSTED NOTES</h1>
                 <div className='m-5 d-flex justify-content-center align-items-center'>
                     <Link className='btn bg-success text-white' to={'/notes/new'}>Write note</Link>
                 </div>
